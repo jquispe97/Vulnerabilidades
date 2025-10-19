@@ -1,0 +1,296 @@
+﻿html,body 
+{
+    margin:0px;
+    padding:0px;
+    font-family:Arial;
+    color: #222;
+    
+    min-width: 1500px;
+}
+a
+{
+    color: #222;
+    text-decoration: none;
+}
+
+/*Cabecera*/
+#cabecera
+{
+    height: 56px;
+    width: 100%;
+    background: url('../images/fondoCabecera.png') repeat-x;
+    color: #FFFFFF;
+}
+
+#cabecera div
+{
+    padding: 0 2%;
+    width: 46%;
+    float: left;
+    height: 56px;
+    line-height: 56px;
+    display: block;
+    vertical-align: middle;
+}
+/*Cabecera*/
+
+/*Menu*/
+#menu
+{
+    background-color: #E6E6E6;
+    width: 20%;
+    float: left;
+    
+    height: -moz-calc(100vh - 56px);
+	height: -webkit-calc(100vh - 56px);
+	height: -o-calc(100vh - 56px);
+	height: calc(100vh - 56px);
+	
+	min-width: 300px;
+	
+	border-right: 5px solid #999999;
+}
+#menu ul, #menu .subMenu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#menu li
+{
+    background: url('../images/fondoMenu.png') repeat-x;
+    height: 40px;
+    line-height: 40px;
+}
+#menu li>a
+{
+    background-image: url('../images/iconos/ir.png');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 15px;
+}
+.subMenu
+{
+    display: none;
+}
+.subMenu li
+{
+    padding-left: 5% !important;
+}
+#menu a
+{
+    display: inline-block;
+    height: 100%;
+    width: 85%;
+    padding-left: 15%;
+}
+#menu span
+{
+    display: inline-block;
+    height: 100%;
+    width: 85%;
+    padding-left: 15%;
+    
+    background-image: url('../images/iconos/expandir.png');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 15px;
+    
+    cursor: pointer;
+}
+/*Menu*/
+
+/*Contenido*/
+#contenido
+{
+    width: -moz-calc(80% - 5px);
+	width: -webkit-calc(80% - 5px);
+	width: -o-calc(80% - 5px);
+	width: calc(80% - 5px);
+    
+    float: left;
+}
+#titulo
+{
+    background: url('../images/fondoTitulo.png') repeat-x;
+    height: 71px;
+    line-height: 71px;
+    font-size: 150%;
+    padding-left: 2%;
+    width: 98%;
+}
+
+#areaTrabajo
+{
+	height: -moz-calc(100vh - 127px);
+    height: -webkit-calc(100vh - 127px);
+    height: -o-calc(100vh - 127px);
+    height: calc(100vh - 127px);
+    
+    overflow: auto;
+}
+
+input
+{
+    outline: none;    
+}
+input[type=submit] {
+	padding: 10px 20px;
+	background-color:#FFF;
+	color: #000;
+	display:inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: none;
+	cursor: pointer;
+	border: 2px solid #CCCCCC;
+	margin: 30px 10px 0 10px;
+}
+.divInput{
+	width: 20%;
+	margin: 30px 10px 0 10px;
+	position: relative;
+	/*float: left;*/
+	display:inline-block;
+	text-align: left;	
+}
+.botonLink
+{
+    position: absolute;
+    top: 0;
+    left: -moz-calc(100% - 25px);
+	left: -webkit-calc(100% - 25px);
+	left: -o-calc(100% - 25px);
+	left: calc(100% - 25px);
+	cursor: pointer;
+	display: none;
+}
+#parteFormulario .divInput
+{
+    width: 80%;
+    margin-left: 10%;
+    float: none;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="date"],textarea,select
+{
+	font: 15px Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	border: 0;
+	padding: 4px 0;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
+}
+textarea
+{
+    outline: none;
+	display:block;
+	overflow:auto;	
+}
+.input ~ .focus-border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.4s;
+}
+.input:focus ~ .focus-border, .input.has-content ~ .focus-border {
+	width: 100%;
+	transition: 0.4s;
+}
+.input ~ label {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 9px;
+	color: #aaa;
+	transition: 0.3s;
+	z-index: -1;
+	letter-spacing: 0.5px;
+}
+.input:focus ~ label, .input.has-content ~ label {
+	top: -16px;
+	font-size: 12px;
+	color: #3399FF;
+	transition: 0.3s;
+}
+
+#segmentoFiltro
+{
+    width: 96%;
+    padding: 0 2% 30px 2%;
+    border-bottom: 1px solid #CCCCCC;
+}
+.lineaReporte, .lineaBotones
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#segmentoFiltro .lineaReporte
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#segmentoFiltro .lineaBotones
+{
+    text-align: right;
+    float: none;
+}
+#parteFormulario .lineaBotones
+{
+    text-align: center;
+}
+
+#segmentoConsultar
+{
+    padding: 30px 2% 0 2%;
+}
+
+.grilla
+{
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.grilla tr
+{
+    border: none;
+}
+
+.grilla th,.grilla td
+{
+    border: none;
+}
+
+.grilla th
+{
+    border-bottom: 3px solid #DDD;
+    padding: 0px 0px 10px 0px;
+}
+
+.grilla td
+{
+    border-bottom: 1px solid #DDD;
+    padding: 7px 0px;
+}
+
+.grilla a
+{
+    color: #4E5C77;
+    text-decoration: underline;
+}
+/*Contenido*/
+
+#divCargando
+{
+    position: fixed; text-align: center; height: 100%; width: 100%; top: 0;
+        right: 0; left: 0; z-index: 9999999; background-color: rgba(255,255,255,0.7); display: none;
+}

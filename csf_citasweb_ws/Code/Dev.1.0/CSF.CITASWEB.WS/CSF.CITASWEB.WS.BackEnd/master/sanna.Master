@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="sanna.master.cs" Inherits="CSF.CITASWEB.WS.BackEnd.master.sanna" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>[Sanna App] Backend</title>
+    <link href="../css/sanna.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="placeCabecera" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/js/jquery-3.2.1.min.js" />
+            <asp:ScriptReference Path="~/js/sanna.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div id="cabecera">
+        <div style="font-size: 150%; font-family: Times New Roman">
+            <span style="color: #CCCCCC; font-style: italic;">Backend</span> <span style="font-weight: bold;">
+                Citas Web</span></div>
+        <div style="text-align: right;display:inline-block;">
+            <asp:Label ID="lblUsuario" runat="server" Text="" Style="float: left;width:90%;text-align:right;"></asp:Label>
+            <asp:ImageButton ID="btnCerrarSesion" ImageUrl="~/images/iconos/cerrar.png" runat="server"
+                OnClick="btnCerrarSesion_Click" OnClientClick="return confirm('Está seguro que desea cerrar la sesión?');" Style="width: 20px; float: left; padding-top: 16px; padding-left: 5px;" /></div>
+    </div>
+    <div id="cuerpo">
+        <div id="menu">
+            <ul>
+                <li><a href="../mantenimientos/notificacionMasiva.aspx">Notificaciones masivas</a></li>
+                <li><a href="../mantenimientos/mantenimientoSeguro.aspx">Mant. de seguros</a></li>
+                <li><a href="../mantenimientos/mantenimientoClinica.aspx">Mant. de clínicas</a></li>
+                <li><a href="../mantenimientos/mantenimientoParametro.aspx">Mant. de parámetros</a></li>
+                <li><a href="../mantenimientos/mantenimientoPreguntasFrecuentes.aspx">Mant. de preg. frecuentes</a></li>
+                <li><a href="../mantenimientos/mantenimientoMedico.aspx">Mant. de médicos</a></li>
+                <li><a href="../mantenimientos/mantenimientoMedicoSubEsp.aspx">Mant. de médicosSubEsp</a></li>
+                <li><span>Métricas</span>
+                    <ul class="subMenu">
+                        <li><a href="../metricas/usuariosApp.aspx">Registro de usuarios en App</a></li>
+                        <!--<li><a href="">Metrica 2</a></li>
+                        <li><a href="">Metrica 3</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="contenido">
+            <div id="titulo">
+                <asp:ContentPlaceHolder ID="placeTitulo" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="areaTrabajo">
+                <asp:ContentPlaceHolder ID="placeCuerpo" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div id="divCargando">
+        <img style="position: absolute; top: 0; bottom: 0; margin: auto;" src="../images/cargando.gif"
+            alt="Procesando..." />
+    </div>
+    </form>
+</body>
+</html>

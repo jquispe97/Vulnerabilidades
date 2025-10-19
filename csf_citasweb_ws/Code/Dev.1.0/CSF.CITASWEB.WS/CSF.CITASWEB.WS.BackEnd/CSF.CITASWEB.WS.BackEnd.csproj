@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CC0621C-8E93-4443-9FBE-54A7A0589EF1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSF.CITASWEB.WS.BackEnd</RootNamespace>
+    <AssemblyName>CSF.CITASWEB.WS.BackEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\login.css" />
+    <Content Include="css\sanna.css" />
+    <Content Include="images\cargando.gif" />
+    <Content Include="images\fondoCabecera.png" />
+    <Content Include="images\fondoMenu.png" />
+    <Content Include="images\fondoTitulo.png" />
+    <Content Include="images\iconos\cerrar.png" />
+    <Content Include="images\iconos\contraer.png" />
+    <Content Include="images\iconos\expandir.png" />
+    <Content Include="images\iconos\ir.png" />
+    <Content Include="images\iconos\link.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\mantenimientoMedicoSubEsp.js" />
+    <Content Include="js\mantenimientoMedico.js" />
+    <Content Include="js\mantenimientoPreguntasFrecuentes.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\mantenimientoClinica.js" />
+    <Content Include="js\mantenimientoParametro.js" />
+    <Content Include="js\mantenimientoSeguro.js" />
+    <Content Include="js\sanna.js" />
+    <Content Include="js\usuariosApp.js" />
+    <Content Include="mantenimientos\mantenimientoMedicoSubEsp.aspx" />
+    <Content Include="mantenimientos\mantenimientoClinica.aspx" />
+    <Content Include="mantenimientos\mantenimientoMedico.aspx" />
+    <Content Include="mantenimientos\mantenimientoParametro.aspx" />
+    <Content Include="mantenimientos\mantenimientoPreguntasFrecuentes.aspx" />
+    <Content Include="mantenimientos\mantenimientoSeguro.aspx" />
+    <Content Include="mantenimientos\notificacionMasiva.aspx" />
+    <Content Include="metricas\usuariosApp.aspx" />
+    <Content Include="principal\index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoMedicoSubEsp.aspx.cs">
+      <DependentUpon>mantenimientoMedicoSubEsp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoMedicoSubEsp.aspx.designer.cs">
+      <DependentUpon>mantenimientoMedicoSubEsp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoClinica.aspx.cs">
+      <DependentUpon>mantenimientoClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoClinica.aspx.designer.cs">
+      <DependentUpon>mantenimientoClinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoMedico.aspx.cs">
+      <DependentUpon>mantenimientoMedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoMedico.aspx.designer.cs">
+      <DependentUpon>mantenimientoMedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoParametro.aspx.cs">
+      <DependentUpon>mantenimientoParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoParametro.aspx.designer.cs">
+      <DependentUpon>mantenimientoParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoPreguntasFrecuentes.aspx.cs">
+      <DependentUpon>mantenimientoPreguntasFrecuentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoPreguntasFrecuentes.aspx.designer.cs">
+      <DependentUpon>mantenimientoPreguntasFrecuentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoSeguro.aspx.cs">
+      <DependentUpon>mantenimientoSeguro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantenimientoSeguro.aspx.designer.cs">
+      <DependentUpon>mantenimientoSeguro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\notificacionMasiva.aspx.cs">
+      <DependentUpon>notificacionMasiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\notificacionMasiva.aspx.designer.cs">
+      <DependentUpon>notificacionMasiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\sanna.Master.cs">
+      <DependentUpon>sanna.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\sanna.Master.designer.cs">
+      <DependentUpon>sanna.Master</DependentUpon>
+    </Compile>
+    <Compile Include="metricas\usuariosApp.aspx.cs">
+      <DependentUpon>usuariosApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="metricas\usuariosApp.aspx.designer.cs">
+      <DependentUpon>usuariosApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="principal\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="principal\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\paginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\sanna.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="temporal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSF.CITASWEB.WS.BE\CSF.CITASWEB.WS.BE.csproj">
+      <Project>{B9399A8B-7219-4B44-8836-901907246865}</Project>
+      <Name>CSF.CITASWEB.WS.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSF.CITASWEB.WS.DA\CSF.CITASWEB.WS.DA.csproj">
+      <Project>{AA5651F5-58EE-4ECE-ADC7-5762C2E798EA}</Project>
+      <Name>CSF.CITASWEB.WS.DA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51038</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets" Condition="Exists('..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

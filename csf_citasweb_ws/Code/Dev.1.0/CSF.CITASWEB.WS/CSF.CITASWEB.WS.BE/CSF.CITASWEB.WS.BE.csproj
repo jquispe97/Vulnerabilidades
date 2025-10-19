@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9399A8B-7219-4B44-8836-901907246865}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSF.CITASWEB.WS.BE</RootNamespace>
+    <AssemblyName>CSF.CITASWEB.WS.BE</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="beAuthorizationNumber.cs" />
+    <Compile Include="bePagoResponse.cs" />
+    <Compile Include="beRespuestaImagen.cs" />
+    <Compile Include="CitaBE.cs" />
+    <Compile Include="ClinicaBE.cs" />
+    <Compile Include="ConsultaAsegNomResponseBE.cs" />
+    <Compile Include="DoctorMasWS\DMAnularCitaBE.cs" />
+    <Compile Include="DoctorMasWS\DMCreacionCitaBE.cs" />
+    <Compile Include="DoctorMasWS\DMPagoCitaBE.cs" />
+    <Compile Include="DoctorMasWS\DMReprogramarCitaBE.cs" />
+    <Compile Include="DoctorMasWS\DMResponseBE.cs" />
+    <Compile Include="DoctorMasWS\DMSolicitudTokenBE.cs" />
+    <Compile Include="EspecialidadBE.cs" />
+    <Compile Include="FilaEsperaBE.cs" />
+    <Compile Include="HO_WS\HOConsultarAlergiasMedicacionRiesgoCasaBE.cs" />
+    <Compile Include="HO_WS\HOConsultarContactosBE.cs" />
+    <Compile Include="HO_WS\HOConsultarDatosHospitalizacionBE.cs" />
+    <Compile Include="HO_WS\HOConsultarMedicacionItemsBE.cs" />
+    <Compile Include="HO_WS\HOConsultarMedicamentosBE.cs" />
+    <Compile Include="HO_WS\HOConsultarTerminosBE.cs" />
+    <Compile Include="HO_WS\HOGenericoBE.cs" />
+    <Compile Include="HO_WS\HOGrabarAlergiasMedicacionRiesgoCasaBE.cs" />
+    <Compile Include="HO_WS\HOGrabarContactosBE.cs" />
+    <Compile Include="HO_WS\HOGrabarTerminosBE.cs" />
+    <Compile Include="IzipayBE.cs" />
+    <Compile Include="MantClinicaBE.cs" />
+    <Compile Include="MantMedicoSubEspecialidadBE.cs" />
+    <Compile Include="MantParametroBE.cs" />
+    <Compile Include="MantSeguroBE.cs" />
+    <Compile Include="MedicoBE.cs" />
+    <Compile Include="MFA_WS\MFAAutenticarBE.cs" />
+    <Compile Include="MFA_WS\MFAEnviarCodigoBE.cs" />
+    <Compile Include="MFA_WS\MFAValidarCodigoBE.cs" />
+    <Compile Include="NotificacionMasivaBE.cs" />
+    <Compile Include="OrdenRequestBE.cs" />
+    <Compile Include="OTPBE.cs" />
+    <Compile Include="ParametrizacionBE.cs" />
+    <Compile Include="PreguntaFrecuenteBE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Genericas\RespuestaBE.cs" />
+    <Compile Include="ProtocoloChequeoMedicoBE.cs" />
+    <Compile Include="QR_WS\IM_ListarImagenesBE.cs" />
+    <Compile Include="QR_WS\IM_ListarPeriodoBE.cs" />
+    <Compile Include="QR_WS\IM_ObtenerImagenBE.cs" />
+    <Compile Include="QR_WS\IM_ObtenerResultadoBE.cs" />
+    <Compile Include="QR_WS\LB_ListarResultadosBE.cs" />
+    <Compile Include="QR_WS\LB_ObtenerHistoricoBE.cs" />
+    <Compile Include="QR_WS\LB_ObtenerResultadoBE.cs" />
+    <Compile Include="QR_WS\PROC_ListarAnestesiologoBE.cs" />
+    <Compile Include="QR_WS\PROC_ListarCptBE.cs" />
+    <Compile Include="QR_WS\QR_ListarQRBE.cs" />
+    <Compile Include="QR_WS\QR_LoginBE.cs" />
+    <Compile Include="QR_WS\QR_RespuestaBE.cs" />
+    <Compile Include="QR_WS\REHR_ReporteByteBE.cs" />
+    <Compile Include="QR_WS\VD_ListarDeudaBE.cs" />
+    <Compile Include="ReporteBE.cs" />
+    <Compile Include="ServiciosWebBE.cs" />
+    <Compile Include="SitedsConAse270RequestBE.cs" />
+    <Compile Include="UsuarioBE.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets" Condition="Exists('..\packages\MSBuild.NugetContentRestore.0.1.6\build\net40\MSBuild.NugetContentRestore.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,100 @@
+﻿html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    color: #222;
+    min-width: 1500px;
+}
+input
+{
+    outline: none;
+}
+input[type=submit] {
+    padding: 10px 20px;
+    background-color: #FFF;
+    color: #000;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 2px solid #CCCCCC;
+    margin: 30px 10px 0 10px;
+}
+input[type="text"],
+input[type="password"] {
+    font: 15px Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+.divInput {
+    width: 90%;
+    margin: 30px 10px 0 10px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+.input ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+.input:focus ~ .focus-border,
+.input.has-content ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+.input ~ label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+.input:focus ~ label,
+.input.has-content ~ label {
+    top: -16px;
+    font-size: 12px;
+    color: #3399FF;
+    transition: 0.3s;
+}
+#divLogin {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#divLoginContenido {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    background-color: #FFF;
+    z-index: -5;
+    -webkit-border-radius: 12px; 
+    -moz-border-radius: 12px; 
+    border-radius: 12px; 
+}
